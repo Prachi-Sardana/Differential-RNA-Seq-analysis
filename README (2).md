@@ -1,14 +1,11 @@
-# Project Title
-Assignment 4 -BINF6309 -Bioinformatics
 
-## NUID - 002938389
+# Project Title
+To estimate the relative abundance using Salmon and Deseq2 to perform statistical tests to identify differentially expressed genes.
+
 
 ## Authors
 -Prachi Sardana
 -sardana.p@northeastern.edu
-
-# Description
-To estimate the relative abundance using Salmon and Deseq2 to perform statistical tests to identify differentially expressed genes.
 
 # Getting Started
 ## Dependencies
