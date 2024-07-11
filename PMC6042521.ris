@@ -1,0 +1,38 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Wu, Douglas C
+AU  - Yao, Jun
+AU  - Ho, Kevin S
+AU  - Lambowitz, Alan M
+AU  - Wilke, Claus O
+T1  - Limitations of alignment-free tools in total RNA-seq quantification
+LA  - eng
+SN  - 1471-2164
+Y1  - 2018/07/03
+AB  - BACKGROUND: Alignment-free RNA quantification tools have significantly increased the speed of RNA-seq analysis. However, it is unclear whether these state-of-the-art RNA-seq analysis pipelines can quantify small RNAs as accurately as they do with long RNAs in the context of total RNA quantification. RESULT: We comprehensively tested and compared four RNA-seq pipelines for accuracy of gene quantification and fold-change estimation. We used a novel total RNA benchmarking dataset in which small non-coding RNAs are highly represented along with other long RNAs. The four RNA-seq pipelines consisted of two commonly-used alignment-free pipelines and two variants of alignment-based pipelines. We found that all pipelines showed high accuracy for quantifying the expression of long and highly-abundant genes. However, alignment-free pipelines showed systematically poorer performance in quantifying lowly-abundant and small RNAs. CONCLUSION: We have shown that alignment-free and traditional alignment-based quantification methods perform similarly for common gene targets, such as protein-coding genes. However, we have identified a potential pitfall in analyzing and quantifying lowly-expressed genes and small RNAs with alignment-free pipelines, especially when these small RNAs contain biological variations.
+SP  - 510
+EP  - 510
+VL  - 19
+IS  - 1
+AN  - 29969991
+UR  - https://pubmed.ncbi.nlm.nih.gov/29969991
+DO  - 10.1186/s12864-018-4869-5
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6042521/
+U1  - 29969991[pmid]
+U2  - PMC6042521[pmcid]
+U4  - 10.1186/s12864-018-4869-5[PII]
+J2  - BMC Genomics
+JF  - BMC genomics
+KW  - RNA-seq
+KW  - TGIRT-seq
+KW  - k-mer
+KW  - Algorithms
+KW  - Area Under Curve
+KW  - High-Throughput Nucleotide Sequencing
+KW  - RNA/*chemistry/metabolism
+KW  - RNA, Ribosomal/chemistry/metabolism
+KW  - RNA, Transfer/chemistry/metabolism
+KW  - ROC Curve
+KW  - Sequence Analysis, RNA/*methods
+CY  - England
+ER  - 

@@ -1,0 +1,38 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Raghavan, Venket
+AU  - Kraft, Louis
+AU  - Mesny, Fantin
+AU  - Rigerte, Linda
+T1  - A simple guide to de novo transcriptome assembly and annotation
+LA  - eng
+SN  - 1477-4054
+SN  - 1467-5463
+Y1  - 2022/03/10
+AB  - A transcriptome constructed from short-read RNA sequencing (RNA-seq) is an easily attainable proxy catalog of protein-coding genes when genome assembly is unnecessary, expensive or difficult. In the absence of a sequenced genome to guide the reconstruction process, the transcriptome must be assembled de novo using only the information available in the RNA-seq reads. Subsequently, the sequences must be annotated in order to identify sequence-intrinsic and evolutionary features in them (for example, protein-coding regions). Although straightforward at first glance, de novo transcriptome assembly and annotation can quickly prove to be challenging undertakings. In addition to familiarizing themselves with the conceptual and technical intricacies of the tasks at hand and the numerous pre- and post-processing steps involved, those interested must also grapple with an overwhelmingly large choice of tools. The lack of standardized workflows, fast pace of development of new tools and techniques and paucity of authoritative literature have served to exacerbate the difficulty of the task even further. Here, we present a comprehensive overview of de novo transcriptome assembly and annotation. We discuss the procedures involved, including pre- and post-processing steps, and present a compendium of corresponding tools.
+SP  - bbab563
+VL  - 23
+IS  - 2
+AN  - 35076693
+UR  - https://pubmed.ncbi.nlm.nih.gov/35076693
+DO  - 10.1093/bib/bbab563
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8921630/
+U1  - 35076693[pmid]
+U2  - PMC8921630[pmcid]
+U4  - 6514404[PII]
+J2  - Brief Bioinform
+JF  - Briefings in bioinformatics
+KW  - RNA-seq
+KW  - annotation
+KW  - assembly
+KW  - de novo
+KW  - tools
+KW  - transcriptome
+KW  - *Genome
+KW  - High-Throughput Nucleotide Sequencing
+KW  - Molecular Sequence Annotation
+KW  - Sequence Analysis, RNA/methods
+KW  - *Transcriptome
+KW  - Workflow
+CY  - England
+ER  - 

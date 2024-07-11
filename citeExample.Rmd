@@ -1,0 +1,131 @@
+---
+author: Prachi Sardana
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+    dev: 'svg'
+  md_document:
+    variant: gfm
+bibliography: bibliography.ris
+---
+
+
+## Overview
+
+The two main steps in performing differential expression analysis are to
+estimate the relative abundance of transcripts, and to apply statistical models
+to test for differential expression between treatment groups. Estimating
+relative abundance is basically determining how many NGS reads match a given
+gene within a genome. In this module you'll use Salmon [@Patro] to estimate
+relative abundance, tximport [@Soneson] to import the Salmon abundance
+estimates, and DESeq2 [@Love] to perform statistical tests to identify
+differentially expressed genes. 
+
+## References
+
+## TY  - JOUR
+## DB  - PubMed
+## AU  - Soneson, Charlotte
+## AU  - Love, Michael I
+## AU  - Robinson, Mark D
+## T1  - Differential analyses for RNA-seq: transcript-level estimates improve gene-level inferences
+## LA  - eng
+## SN  - 2046-1402
+## SN  - 2046-1402
+## Y1  - 2015/12/30
+## AB  - High-throughput sequencing of cDNA (RNA-seq) is used extensively to characterize the transcriptome of cells. Many transcriptomic studies aim at comparing either abundance levels or the transcriptome composition between given conditions, and as a first step, the sequencing reads must be used as the basis for abundance quantification of transcriptomic features of interest, such as genes or transcripts. Various quantification approaches have been proposed, ranging from simple counting of reads that overlap given genomic regions to more complex estimation of underlying transcript abundances. In this paper, we show that gene-level abundance estimates and statistical inference offer advantages over transcript-level analyses, in terms of performance and interpretability. We also illustrate that the presence of differential isoform usage can lead to inflated false discovery rates in differential gene expression analyses on simple count matrices but that this can be addressed by incorporating offsets derived from transcript-level abundance estimates. We also show that the problem is relatively minor in several real data sets. Finally, we provide an R package ( tximport) to help users integrate transcript-level abundance estimates from common quantification pipelines into count-based statistical inference engines.
+## SP  - 1521
+## EP  - 1521
+## VL  - 4
+## AN  - 26925227
+## UR  - https://pubmed.ncbi.nlm.nih.gov/26925227
+## DO  - 10.12688/f1000research.7563.2
+## L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4712774/
+## U1  - 26925227[pmid]
+## U2  - PMC4712774[pmcid]
+## J2  - F1000Res
+## JF  - F1000Research
+## KW  - RNA-seq
+## KW  - gene expression
+## KW  - quantification
+## KW  - transcriptomics
+## CY  - England
+## ER  - 
+## TY  - JOUR
+## DB  - PubMed
+## AU  - Wu, Douglas C
+## AU  - Yao, Jun
+## AU  - Ho, Kevin S
+## AU  - Lambowitz, Alan M
+## AU  - Wilke, Claus O
+## T1  - Limitations of alignment-free tools in total RNA-seq quantification
+## LA  - eng
+## SN  - 1471-2164
+## Y1  - 2018/07/03
+## AB  - BACKGROUND: Alignment-free RNA quantification tools have significantly increased the speed of RNA-seq analysis. However, it is unclear whether these state-of-the-art RNA-seq analysis pipelines can quantify small RNAs as accurately as they do with long RNAs in the context of total RNA quantification. RESULT: We comprehensively tested and compared four RNA-seq pipelines for accuracy of gene quantification and fold-change estimation. We used a novel total RNA benchmarking dataset in which small non-coding RNAs are highly represented along with other long RNAs. The four RNA-seq pipelines consisted of two commonly-used alignment-free pipelines and two variants of alignment-based pipelines. We found that all pipelines showed high accuracy for quantifying the expression of long and highly-abundant genes. However, alignment-free pipelines showed systematically poorer performance in quantifying lowly-abundant and small RNAs. CONCLUSION: We have shown that alignment-free and traditional alignment-based quantification methods perform similarly for common gene targets, such as protein-coding genes. However, we have identified a potential pitfall in analyzing and quantifying lowly-expressed genes and small RNAs with alignment-free pipelines, especially when these small RNAs contain biological variations.
+## SP  - 510
+## EP  - 510
+## VL  - 19
+## IS  - 1
+## AN  - 29969991
+## UR  - https://pubmed.ncbi.nlm.nih.gov/29969991
+## DO  - 10.1186/s12864-018-4869-5
+## L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6042521/
+## U1  - 29969991[pmid]
+## U2  - PMC6042521[pmcid]
+## U4  - 10.1186/s12864-018-4869-5[PII]
+## J2  - BMC Genomics
+## JF  - BMC genomics
+## KW  - RNA-seq
+## KW  - TGIRT-seq
+## KW  - k-mer
+## KW  - Algorithms
+## KW  - Area Under Curve
+## KW  - High-Throughput Nucleotide Sequencing
+## KW  - RNA/*chemistry/metabolism
+## KW  - RNA, Ribosomal/chemistry/metabolism
+## KW  - RNA, Transfer/chemistry/metabolism
+## KW  - ROC Curve
+## KW  - Sequence Analysis, RNA/*methods
+## CY  - England
+## ER  - 
+## TY  - JOUR
+## DB  - PubMed
+## AU  - Raghavan, Venket
+## AU  - Kraft, Louis
+## AU  - Mesny, Fantin
+## AU  - Rigerte, Linda
+## T1  - A simple guide to de novo transcriptome assembly and annotation
+## LA  - eng
+## SN  - 1477-4054
+## SN  - 1467-5463
+## Y1  - 2022/03/10
+## AB  - A transcriptome constructed from short-read RNA sequencing (RNA-seq) is an easily attainable proxy catalog of protein-coding genes when genome assembly is unnecessary, expensive or difficult. In the absence of a sequenced genome to guide the reconstruction process, the transcriptome must be assembled de novo using only the information available in the RNA-seq reads. Subsequently, the sequences must be annotated in order to identify sequence-intrinsic and evolutionary features in them (for example, protein-coding regions). Although straightforward at first glance, de novo transcriptome assembly and annotation can quickly prove to be challenging undertakings. In addition to familiarizing themselves with the conceptual and technical intricacies of the tasks at hand and the numerous pre- and post-processing steps involved, those interested must also grapple with an overwhelmingly large choice of tools. The lack of standardized workflows, fast pace of development of new tools and techniques and paucity of authoritative literature have served to exacerbate the difficulty of the task even further. Here, we present a comprehensive overview of de novo transcriptome assembly and annotation. We discuss the procedures involved, including pre- and post-processing steps, and present a compendium of corresponding tools.
+## SP  - bbab563
+## VL  - 23
+## IS  - 2
+## AN  - 35076693
+## UR  - https://pubmed.ncbi.nlm.nih.gov/35076693
+## DO  - 10.1093/bib/bbab563
+## L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8921630/
+## U1  - 35076693[pmid]
+## U2  - PMC8921630[pmcid]
+## U4  - 6514404[PII]
+## J2  - Brief Bioinform
+## JF  - Briefings in bioinformatics
+## KW  - RNA-seq
+## KW  - annotation
+## KW  - assembly
+## KW  - de novo
+## KW  - tools
+## KW  - transcriptome
+## KW  - *Genome
+## KW  - High-Throughput Nucleotide Sequencing
+## KW  - Molecular Sequence Annotation
+## KW  - Sequence Analysis, RNA/methods
+## KW  - *Transcriptome
+## KW  - Workflow
+## CY  - England
+## ER  - 
